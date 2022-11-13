@@ -15,3 +15,5 @@ def predict(ph:float,Solids:float,Turbidity:float):
         message="Nước kém chất lượng,bạn cần xử lý nó trước"
     response={"Predict":int(prediction),"Message":message}
     return (response)
+if __name__=="__main__":
+    uvicorn.run(app)
